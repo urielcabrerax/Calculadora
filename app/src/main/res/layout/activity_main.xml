@@ -24,7 +24,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/calculadorai"
-        android:layout_marginBottom="25dp"/>
+        android:layout_marginBottom="25dp"
+        android:layout_gravity="center"/>
 
     <EditText
         android:id="@+id/primernumero"
