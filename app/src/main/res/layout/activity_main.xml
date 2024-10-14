@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/holo_blue_dark"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculadora, mi primer programa"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/calculadorai"
+        android:layout_marginBottom="25dp"/>
+
+    <EditText
+        android:id="@+id/primernumero"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/background_light"
+        android:hint="Ingrese el primer número: "
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"/>
+
+    <EditText
+        android:id="@+id/segundonumero"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/background_light"
+        android:hint="Ingrese el segundo número: "
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+
+        />
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnsuma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/btnresta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/btnmulti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/btndivi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Resultado: "
+        android:textColor="@android:color/background_light"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
+
